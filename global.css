@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Playfair Display';
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.field {
+  border: 2px solid #d0d0d0;
+  width: 963px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.field .tile {
+  width: 30px;
+  height: 30px;
+  background-size: 100%;
+  background-image: url(images/tile-.png);
+  z-index: 5;
+}
+
+.field .tileW {
+  background-image: url(images/tile-W.png);
+}
+
+.field .tileP {
+  background-image: url(images/tile-P.png);
+  z-index: 10;
+}
+
+.field .tileHP {
+  background-image: url(images/tile-HP.png);
+  z-index: 9;
+}
+
+.field .tileSW {
+  background-image: url(images/tile-SW.png);
+  z-index: 9;
+}
+
+.field .tileE {
+  background-image: url(images/tile-E.png);
+  z-index: 10;
+}
+
+.field .tile .health {
+  background-color: #ff0000;
+  z-index: 11;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 3px;
+}
+
+.field .tileP .health {
+  background-color: #00ff00;
+  z-index: 99;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 3px;
+}
+
+.game-over-menu {
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+}
+
+.game-over-menu-content {
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+  font-size: 45px;
+  border-radius: 10px;
+  min-height: 50px;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.victory-message {
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  color: #000000;
+  font-size: 45px;
+  border-radius: 10px;
+  min-height: 50px;
+  min-width: 300px;
+  padding: 20px;
+}
